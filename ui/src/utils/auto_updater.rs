@@ -102,7 +102,7 @@ pub async fn download_update(
     ch: mpsc::UnboundedSender<f32>,
 ) -> anyhow::Result<String> {
     let latest_release =
-        get_github_release("https://api.github.com/repos/Satellite-im/Uplink/releases/latest")
+        get_github_release("https://api.github.com/repos/Satellite-im/test-builds-uplink/releases/latest")
             .await?;
     let find_asset = |name: &str| {
         latest_release
