@@ -68,7 +68,7 @@ pub fn get_download_dest() -> Option<PathBuf> {
 
 pub async fn check_for_release() -> anyhow::Result<Option<GitHubRelease>> {
     let latest_release =
-        get_github_release("https://api.github.com/repos/Satellite-im/Uplink/releases/latest")
+        get_github_release("https://api.github.com/repos/Satellite-im/test-builds-uplink/releases/latest")
             .await?;
 
     // ensure installer is released - .deb, .msi, or .dpkg
